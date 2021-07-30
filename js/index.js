@@ -51,10 +51,10 @@ operationEl.forEach((operation) => {
 
 function clearVar(name = "") {
   dis1Num += dis2Num + " " + name + " ";
-  display1El.innerText = dis1Num;
+  display1El.innerText = result + name;
   display2El.innerText = "";
   dis2Num = "";
-  tempResultEl.innerText = result;
+  tempResultEl.innerText = dis1Num;
 }
 
 function mathOperation() {
@@ -81,7 +81,7 @@ equalEl.addEventListener("click", (e) => {
   display2El.innerText = result;
   localStorage.setItem(
     "result",
-    display1El.innerText + " = " + display2El.innerText
+    tempResultEl.innerText + " = " + display2El.innerText
   );
   if (recentOps < 5) {
     if (arr.length === 0) {
