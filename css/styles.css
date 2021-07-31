@@ -21,7 +21,7 @@ section {
 }
 
 .container {
-    margin-left: 400px;
+    margin-left: 25%;
     width: 90%;
     max-width: 400px;
     background-color: rgb(39, 55, 59);
@@ -108,7 +108,7 @@ li {
     background-color: rgb(182, 182, 182);
     height: 100vh;
     right: 0;
-    width: 350px;
+    width: 25%;
 }
 
 .heading {
@@ -126,4 +126,68 @@ li {
     color: rgb(32, 32, 32);
     font-weight: 500;
     font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    /* For mobile phones: */
+    .container {
+        margin-left: 17%;
+        width: 50%;
+        max-width: 300px;
+    }
+    .display {
+        padding: 10px;
+        height: 80px;
+        font-size: 20px;
+    }
+
+    .button {
+        height: 80px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+
+    #recents {
+        font-size: 15px;
+    }
+  }
+
+@media screen and (max-width: 564px) {
+    .container {
+        margin-left: 5%;
+        width: 50%;
+        max-width: 200px;
+    }
+
+    .sidebar {
+        width: 40%;
+    }
+
+    .display {
+        padding: 5px;
+        height: 60px;
+        font-size: 15px;
+    }
+
+    .display-1 {
+        font-size: 13px;
+    }
+
+    .temp-result {
+        font-size: 13px;
+    }
+
+    .button {
+        height: 50px;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    #recents {
+        font-size: 13px;
+    }
 }
